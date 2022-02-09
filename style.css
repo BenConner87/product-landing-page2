@@ -85,70 +85,95 @@ html, body {
     transition: all ease-in-out 300ms;
 }
 
-.middle {
-    display: flex; 
+/* TOUGH */
+
+.container{
+    margin: 0px 15%; 
+}
+
+.materials  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   padding: 2rem;
+}
+
+.shipping {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 80px;
-    padding: 25px;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.middle #logos {
-    display: block;
-    width: 80px;
+.quality {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.middle .shipping h3 {
+#one h3, #two h3, #three h3 {
     margin: 0px;
     padding: 0px;
-    font-weight: bold;
-    font-size: 25px; 
+    font-weight: bold; 
 }
 
-.middle p {
-    margin: 0px;
-    padding: 0px;
+#logos {
+   width: 60px;
+   height: auto;
 }
 
+
+/* TOUGH */
+
+/* VIDEO */
 #how-it-works {
-    text-align:center; 
-    padding: 30px;
-    margin-top: 60px;
+    text-align: center; 
+    padding: 3rem;
 }
+/* VIDEO */
 
+/* PRICING */
 #pricing {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0px 10%;
+    gap: 0.1rem;
 }
 
 #pricing .box {
     border: 1px solid black;
-    padding: 5px 80px;
+    padding: 0.3rem 3rem;
+    width: 20%;
     text-align: center;
 }
 
 #pricing .box h4 {
     color: white;
     background-color: rgb(182, 176, 176);
-    padding: 20px;
+    padding: 1rem;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #pricing .box h5 {
+    margin: 0px;
+    padding: 0.5rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.1rem;
+}
+
+#pricing .box p {
+    margin: 0px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
 }
 
 #pricing .box input {
-    padding: 5px 30px;
-    margin-bottom: 10px;
+    padding: .5rem 2rem;
+    margin-bottom: 1rem;
     background-color: rgb(103, 182, 208);
     border: 1px solid white;
     border-radius: 5px;
@@ -160,6 +185,8 @@ html, body {
     background-color: rgba(249, 62, 62, 0.845);
     transition: all ease-in-out 300ms;
 }
+
+/* FOOTER */
 
 .footer {
     text-align: right;
@@ -189,4 +216,21 @@ html, body {
 
 .footer p {
     font-size: 12px;
+}
+
+/* MEDIA Qs */
+
+@media (max-width: 800px) {
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    #how-it-works {
+        margin: 0px;
+        padding: 0px;
+    }
 }
